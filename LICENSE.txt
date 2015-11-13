@@ -1,0 +1,120 @@
+This file contains all licenses and description of their scope regarding Universal Dependencies 1.2.
+
+File references refer to the bitstreams as downloadable from http://lindat.cz, PID
+http://hdl.handle.net/11234/1-1464    <=== TO BE CHANGED WHEN PID IS ASSIGNED TO 1.2!
+
+Universal Dependencies v1.2 License Terms
+Universal Dependencies v1.2 (referred to as “UD” in the rest of this document) is a collection of linguistic data and tools. Each of the treebanks has its own license terms and you (the “User”) are responsible for complying with the license terms applicable to those parts of UD, which you use. If you do not agree with the license terms, you must stop using UD and destroy all copies of UD data that you have obtained.
+
+You are specifically reminded that some of the treebanks permit only non-commercial usage.
+
+tools:
+GNU General Public License, version 2, cf. file tools/LICENSE in tools.zip
+The additional software tools are provided as-is (without any warranty) and are redistributed under GNU GPL Version 2.
+
+docs:
+Apache license 2.0, cf. file docs/LICENSE in docs.zip
+
+The license for every treebank included in the release is specified in the appropriate language/treebank directory.
+
+Overview of the treebanks and their license terms
+Treebank
+License
+Ancient_Greek
+CC BY-NC-SA 2.5
+Ancient_Greek-PROIEL
+CC BY-NC-SA 3.0
+Arabic
+CC BY-NC-SA 3.0
+Basque
+CC BY-NC-SA 3.0
+Bulgarian
+CC BY-SA 4.0
+Croatian
+CC BY-SA 4.0
+Czech
+CC BY-NC-SA 3.0
+Danish
+GNU GPL 2.0
+Dutch
+GNU GPL 3.0
+English
+CC BY-SA 4.0
+Estonian
+CC BY-NC-SA 3.0
+Finnish
+CC BY-SA 4.0
+Finnish-FTB
+LGPLv3+ or CC BY 4.0 (dual license)
+French
+CC BY-NC-SA 3.0 US
+German
+CC BY-NC-SA 3.0 US
+Gothic
+CC BY-NC-SA 3.0
+Greek
+CC BY-NC-SA 3.0
+Hebrew
+CC BY-NC-SA 4.0
+Hindi
+CC BY-NC-SA 4.0
+Hungarian
+CC BY-NC-SA 3.0
+Indonesian
+CC BY-NC-SA 3.0 US
+Irish
+CC BY-SA 3.0
+Italian
+CC BY-NC-SA 3.0
+Japanese-KTC
+CC BY-SA 4.0
+Latin
+CC BY-NC-SA 2.5
+Latin-ITT
+CC BY-NC-SA 3.0
+Latin-PROIEL
+CC BY-NC-SA 3.0
+Norwegian
+CC BY-NC-SA
+Old_Church_Slavonic
+CC BY-NC-SA 3.0
+Persian
+CC BY-SA 4.0
+Polish
+GNU GPL 3.0
+Portuguese
+CC BY-NC-SA 3.0
+Romanian
+CC BY-SA 4.0
+Slovenian
+CC BY-NC-SA 4.0
+Spanish
+CC BY-NC-SA 3.0 US
+Swedish
+CC BY-SA 4.0
+Tamil
+CC BY-NC-SA 3.0
+Licenses
+License
+URL
+GNU GPL 2.0
+http://opensource.org/licenses/GPL-2.0
+GNU GPL 3.0
+http://opensource.org/licenses/GPL-3.0
+LGPLv3+ or CC BY 4.0 (dual license)
+http://creativecommons.org/licenses/by/4.0/ 
+http://www.gnu.org/licenses/lgpl-3.0.html
+CC BY 4.0
+http://creativecommons.org/licenses/by/4.0/
+CC BY-SA 3.0
+http://creativecommons.org/licenses/by-sa/3.0/
+CC BY-SA 4.0
+http://creativecommons.org/licenses/by-sa/4.0/
+CC BY-NC-SA 2.5
+http://creativecommons.org/licenses/by-nc-sa/2.5/
+CC BY-NC-SA 3.0 US
+http://creativecommons.org/licenses/by-nc-sa/3.0/us/
+CC BY-NC-SA 3.0
+http://creativecommons.org/licenses/by-nc-sa/3.0/
+CC BY-NC-SA 4.0
+http://creativecommons.org/licenses/by-nc-sa/4.0/
