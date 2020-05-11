@@ -119,7 +119,7 @@ EOF
 my @licenses = sort(keys(%licurl));
 foreach my $license (@licenses)
 {
-    my $reference = $licenses{$license};
+    my $reference = $licurl{$license};
     if($reference =~ m/^http/)
     {
         $reference = "<a href=\"$reference\">$reference</a>";
