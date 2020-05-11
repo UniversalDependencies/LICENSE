@@ -101,7 +101,7 @@ foreach my $treebank (@treebanks)
     $tbknoud =~ s/^UD_//;
     print("      <tr>\n");
     print("        <td>$tbknoud</td>\n");
-    print("        <td>$tbklic{$tbknoud}</td>\n");
+    print("        <td>$tbklic{$treebank}</td>\n");
     print("      </tr>\n");
 }
 print <<EOF
