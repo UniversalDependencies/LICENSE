@@ -10,6 +10,30 @@ use open ':utf8';
 binmode(STDIN, ':utf8');
 binmode(STDOUT, ':utf8');
 binmode(STDERR, ':utf8');
+use Getopt::Long;
+
+sub usage
+{
+    print STDERR ("Usage: LICENSE/generate_license_for_lindat.pl --release 2.6 --date 2020/05/15 \$(cat released_treebanks.txt)\n");
+}
+
+my $release; # = 2.6;
+my $date; # = '2020/05/15';
+GetOptions
+(
+    'release=s' => \$release,
+    'date=s'    => \$date
+);
+if($release !~ m/^\d+\.\d+$/)
+{
+    usage();
+    die("Unknown release '$release'");
+}
+if($date !~ m:^\d\d\d\d/\d\d/\d\d$:)
+{
+    usage();
+    die("Unexpected date format '$date'");
+}
 
 my @treebanks = sort(@ARGV);
 my $n = scalar(@treebanks);
@@ -60,9 +84,23 @@ foreach my $treebank (@treebanks)
 }
 # Print the license in HTML. Modeled after
 # https://github.com/ufal/clarin-dspace/blob/clarin-dev/dspace-xmlui/src/main/webapp/themes/UFAL/lib/html/licence-UD-2.5.html
-my $release = 2.6;
-my $date = '2020/05/15';
-print <<EOF
+print STDERR ("XML and HTML of the license will be generated in the LICENSE folder.\n");
+print STDERR ("Send them to the Lindat staff and/or create a pull request against\n");
+print STDERR ("https://github.com/ufal/clarin-dspace/blob/clarin-dev/dspace-xmlui/src/main/webapp/themes/UFAL/lib/html/");
+print STDERR ("(branch clarin-dev of ufal/clarin-dspace)\n");
+my $licpath = "LICENSE/license-ud-$release";
+open(XML, ">$licpath.xml") or die("Cannot write '$licpath.xml': $!");
+print XML <<EOF
+<?xml version="1.0"?>
+<page>
+  <title>Universal Dependencies v$release License Agreement</title>
+  <title-menu>Universal Dependencies v$release License Agreement</title-menu>
+</page>
+EOF
+;
+close(XML);
+open(HTML, ">$licpath.html") or die("Cannot write '$licpath.html': $!");
+print HTML <<EOF
 <div id="faq-like">
   <h2 id="ufal-point-faq">Universal Dependencies v$release License Agreement</h2>
   <div>
@@ -99,12 +137,12 @@ foreach my $treebank (@treebanks)
 {
     my $tbknoud = $treebank;
     $tbknoud =~ s/^UD_//;
-    print("      <tr>\n");
-    print("        <td>$tbknoud</td>\n");
-    print("        <td>$tbklic{$treebank}</td>\n");
-    print("      </tr>\n");
+    print HTML ("      <tr>\n");
+    print HTML ("        <td>$tbknoud</td>\n");
+    print HTML ("        <td>$tbklic{$treebank}</td>\n");
+    print HTML ("      </tr>\n");
 }
-print <<EOF
+print HTML <<EOF
     </tbody>
   </table>
 
@@ -124,12 +162,13 @@ foreach my $license (@licenses)
     {
         $reference = "<a href=\"$reference\">$reference</a>";
     }
-    print("      <tr><td>$license</td><td>$reference</td></tr>\n");
+    print HTML ("      <tr><td>$license</td><td>$reference</td></tr>\n");
 }
-print <<EOF
+print HTML <<EOF
     </tbody>
   </table>
   </div>
 </div>
 EOF
 ;
+close(HTML);
