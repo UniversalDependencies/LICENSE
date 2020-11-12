@@ -14,8 +14,8 @@ PREVIOUS=2.6
 cd clarin-dspace
 git checkout -b ud${RELEASE}_license
 cd dspace-xmlui/src/main/webapp/themes/UFAL/lib/html
-cp licence-UD-${PREVIOUS}.xml license-ud-${RELEASE}.xml
-cp licence-UD-${PREVIOUS}.html license-ud-${RELEASE}.html
+cp license-ud-${PREVIOUS}.xml license-ud-${RELEASE}.xml
+cp license-ud-${PREVIOUS}.html license-ud-${RELEASE}.html
 git add license-ud-${RELEASE}.*
 git commit -m 'Copied previous UD license.'
 cp ../../../../../../../../../LICENSE/license-ud-${RELEASE}.* .
@@ -23,8 +23,8 @@ git commit -a -m 'Changes for the upcoming UD release.'
 git push --set-upstream origin ud${RELEASE}_license
 cd ../../../../../../../../..
 
-remote: Create a pull request for 'ud2.6_license' on GitHub by visiting:
-remote:      https://github.com/ufal/clarin-dspace/pull/new/ud2.6_license
+remote: Create a pull request for 'ud2.7_license' on GitHub by visiting:
+remote:      https://github.com/ufal/clarin-dspace/pull/new/ud2.7_license
 Warning: If we visit the above URL, Github will offer a different repository and branch as the default target!
 Change target repository to "clarin-dspace".
 Change target branch to "clarin-dev".
