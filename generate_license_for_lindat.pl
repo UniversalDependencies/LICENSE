@@ -43,6 +43,7 @@ my %licurl =
     'GNU GPL 2.0'     => 'http://opensource.org/licenses/GPL-2.0',
     'GNU GPL 3.0'     => 'http://opensource.org/licenses/GPL-3.0',
     'LGPL-LR'         => 'http://www.ida.liu.se/~sarst/bitse/lgpllr.html',
+    'CC0 1.0'         => 'http://creativecommons.org/publicdomain/zero/1.0/',
     'CC BY 4.0'       => 'http://creativecommons.org/licenses/by/4.0/',
     'CC BY-SA 3.0'    => 'http://creativecommons.org/licenses/by-sa/3.0/',
     'CC BY-SA 4.0'    => 'http://creativecommons.org/licenses/by-sa/4.0/',
