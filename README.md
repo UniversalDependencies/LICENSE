@@ -25,9 +25,9 @@ git push --set-upstream origin ud${RELEASE}_license
 cd ../../../../../../../../..
 ```
 
-remote: Create a pull request for 'ud2.7_license' on GitHub by visiting:
-remote:      https://github.com/ufal/clarin-dspace/pull/new/ud2.7_license
+remote: Create a pull request for 'ud2.8_license' on GitHub by visiting:
+remote:      https://github.com/ufal/clarin-dspace/pull/new/ud2.8_license
 Warning: If we visit the above URL, Github will offer a different repository and branch as the default target!
-Change target repository to "clarin-dspace".
+Change target repository to "ufal/clarin-dspace".
 Change target branch to "clarin-dev".
 Request review of the pull request by @kosarko.
