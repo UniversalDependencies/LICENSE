@@ -51,6 +51,7 @@ my %licurl =
     'CC BY-NC-SA 2.5' => 'http://creativecommons.org/licenses/by-nc-sa/2.5/',
     'CC BY-NC-SA 3.0' => 'http://creativecommons.org/licenses/by-nc-sa/3.0/',
     'CC BY-NC-SA 4.0' => 'http://creativecommons.org/licenses/by-nc-sa/4.0/',
+    'C-UDA 1.0'       => 'https://cdla.dev/computational-use-of-data-agreement-v1-0/',
     'PD'              => 'public domain'
 );
 my %tbklic;
