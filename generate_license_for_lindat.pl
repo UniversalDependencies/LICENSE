@@ -49,6 +49,7 @@ my %licurl =
     'CC BY-SA 4.0'    => 'http://creativecommons.org/licenses/by-sa/4.0/',
     'CC BY-NC 4.0'    => 'http://creativecommons.org/licenses/by-nc/4.0/',
     'CC BY-NC-ND 3.0' => 'http://creativecommons.org/licenses/by-nc-nd/3.0/',
+    'CC BY-NC-ND 4.0' => 'http://creativecommons.org/licenses/by-nc-nd/4.0/',
     'CC BY-NC-SA 2.5' => 'http://creativecommons.org/licenses/by-nc-sa/2.5/',
     'CC BY-NC-SA 3.0' => 'http://creativecommons.org/licenses/by-nc-sa/3.0/',
     'CC BY-NC-SA 4.0' => 'http://creativecommons.org/licenses/by-nc-sa/4.0/',
