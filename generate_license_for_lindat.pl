@@ -82,6 +82,7 @@ foreach my $treebank (@treebanks)
     }
     if(!exists($licurl{$license}))
     {
+        print STDERR ("XXX${license}XXX\n");
         die("Unknown license '$license' for treebank '$treebank'");
     }
     $tbklic{$treebank} = $license;
