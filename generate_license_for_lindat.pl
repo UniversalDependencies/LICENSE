@@ -40,7 +40,6 @@ my $n = scalar(@treebanks);
 print STDERR ("Collecting licenses from $n treebanks...\n");
 my %licurl =
 (
-    'GNU GPL 2.0'     => 'http://opensource.org/licenses/GPL-2.0',
     'GNU GPL 3.0'     => 'http://opensource.org/licenses/GPL-3.0',
     'LGPL-LR'         => 'https://spdx.org/licenses/LGPLLR.html',
     'CC0 1.0'         => 'http://creativecommons.org/publicdomain/zero/1.0/',
@@ -124,7 +123,7 @@ print HTML <<EOF
      permit only non-commercial usage.</p>
   <br />
   <p>The additional software tools are provided as-is (without any warranty) and are redistributed
-     under GNU GPL Version 2.</p>
+     under GNU GPL Version 3.</p>
   <br />
   <p>The license for every treebank included in the release is specified in the appropriate
      treebank directory.</p>
