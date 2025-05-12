@@ -7,9 +7,9 @@ The Lindat-maintained licenses are stored on Github at https://github.com/ufal/c
 
 ```
 # Start in the parent folder of all UD repo clones.
-RELDATE=2024/11/15
-RELEASE=2.15
-PREVIOUS=2.14
+RELDATE=2025/05/15
+RELEASE=2.16
+PREVIOUS=2.15
 LICENSE/generate_license_for_lindat.pl --release ${RELEASE} --date ${RELDATE} $(cat released_treebanks.txt)
 cd LICENSE
 git add license-ud-${RELEASE}.*
@@ -32,8 +32,8 @@ git push --set-upstream origin ud${RELEASE}_license
 cd ../../../../../../../../..
 ```
 
-Create a pull request for 'ud2.15_license' on GitHub by visiting:
-https://github.com/ufal/clarin-dspace/pull/new/ud2.15_license
+Create a pull request for 'ud2.16_license' on GitHub by visiting:
+https://github.com/ufal/clarin-dspace/pull/new/ud2.16_license
 
 Warning: If we visit the above URL, Github will offer a different repository and branch as the default target!
 Change target repository to "ufal/clarin-dspace".
