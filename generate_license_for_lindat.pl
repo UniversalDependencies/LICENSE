@@ -2,7 +2,7 @@
 # Takes a list of UD treebanks (repository names) to be released. Scans their
 # folders for the license lines in README files. Generates the joint license
 # files (HTML and XML) in the form required by Lindat.
-# Copyright © 2020 Dan Zeman <zeman@ufal.mff.cuni.cz>
+# Copyright © 2020, 2025 Dan Zeman <zeman@ufal.mff.cuni.cz>
 # License: GNU GPL
 
 use utf8;
@@ -88,21 +88,11 @@ foreach my $treebank (@treebanks)
 }
 # Print the license in HTML. Modeled after
 # https://github.com/ufal/clarin-dspace/blob/clarin-dev/dspace-xmlui/src/main/webapp/themes/UFAL/lib/html/licence-UD-2.5.html
-print STDERR ("XML and HTML of the license will be generated in the LICENSE folder.\n");
+print STDERR ("HTML of the license will be generated in the LICENSE folder.\n");
 print STDERR ("Send them to the Lindat staff and/or create a pull request against\n");
-print STDERR ("https://github.com/ufal/clarin-dspace/blob/clarin-dev/dspace-xmlui/src/main/webapp/themes/UFAL/lib/html/");
-print STDERR ("(branch clarin-dev of ufal/clarin-dspace)\n");
+print STDERR ("https://github.com/ufal/dspace-angular/tree/clarin-v7/src/static-files/");
+print STDERR ("(branch clarin-v7 of ufal/dspace-angular)\n");
 my $licpath = "LICENSE/license-ud-$release";
-open(XML, ">$licpath.xml") or die("Cannot write '$licpath.xml': $!");
-print XML <<EOF
-<?xml version="1.0"?>
-<page>
-  <title>Universal Dependencies v$release License Agreement</title>
-  <title-menu>Universal Dependencies v$release License Agreement</title-menu>
-</page>
-EOF
-;
-close(XML);
 open(HTML, ">$licpath.html") or die("Cannot write '$licpath.html': $!");
 print HTML <<EOF
 <div id="faq-like">
