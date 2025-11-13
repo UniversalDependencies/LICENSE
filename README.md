@@ -41,4 +41,6 @@ https://github.com/ufal/dspace-angular/pull/new/ud2.17_license
 Warning: If we visit the above URL, GitHub may offer a different repository and branch as the default target!
 Change target repository to "ufal/dspace-angular".
 Change target branch to "clarin-v7".
+https://github.com/ufal/dspace-angular/compare/clarin-v7...ufal:dspace-angular:ud2.17_license?expand=1
+
 Request review of the pull request by @kosarko.
