@@ -11,9 +11,9 @@ then submit a pull request to the repository.
 
 ```
 # Start in the parent folder of all UD repo clones.
-RELDATE=2025/11/15
-RELEASE=2.17
-PREVIOUS=2.16
+RELDATE=2026/05/15
+RELEASE=2.18
+PREVIOUS=2.17
 LICENSE/generate_license_for_lindat.pl --release ${RELEASE} --date ${RELDATE} $(cat released_treebanks.txt)
 cd LICENSE
 git add license-ud-${RELEASE}.html
@@ -35,12 +35,12 @@ git push --set-upstream origin ud${RELEASE}_license
 cd ../../..
 ```
 
-Create a pull request for 'ud2.17_license' on GitHub by visiting:
-https://github.com/ufal/dspace-angular/pull/new/ud2.17_license
+Create a pull request for 'ud2.18_license' on GitHub by visiting:
+https://github.com/ufal/dspace-angular/pull/new/ud2.18_license
 
 Warning: If we visit the above URL, GitHub may offer a different repository and branch as the default target!
 Change target repository to "ufal/dspace-angular".
 Change target branch to "clarin-v7".
-https://github.com/ufal/dspace-angular/compare/clarin-v7...ufal:dspace-angular:ud2.17_license?expand=1
+https://github.com/ufal/dspace-angular/compare/clarin-v7...ufal:dspace-angular:ud2.18_license?expand=1
 
 Request review of the pull request by @kosarko.
