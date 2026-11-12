@@ -35,12 +35,14 @@ git push --set-upstream origin ud${RELEASE}_license
 cd ../../..
 ```
 
-Create a pull request for 'ud2.18_license' on GitHub by visiting:
-https://github.com/ufal/dspace-angular/pull/new/ud2.18_license
+Create a pull request for 'ud2.19_license' on GitHub by visiting:
+https://github.com/ufal/dspace-angular/pull/new/ud2.19_license
+https://github.com/ufal/dspace-angular/compare/clarin-v7...ufal:dspace-angular:ud2.19_license?expand=1
 
 Warning: If we visit the above URL, GitHub may offer a different repository and branch as the default target!
-Change target repository to "ufal/dspace-angular".
-Change target branch to "clarin-v7".
-https://github.com/ufal/dspace-angular/compare/clarin-v7...ufal:dspace-angular:ud2.18_license?expand=1
+Change target (base) repository to "ufal/dspace-angular".
+Change target (base) branch to "clarin-v7".
+Mage sure the source (compare) branch is still "ud2.19_license".
+https://github.com/ufal/dspace-angular/compare/clarin-v7...ufal:dspace-angular:ud2.19_license?expand=1
 
 Request review of the pull request by @kosarko.
