@@ -11,9 +11,9 @@ then submit a pull request to the repository.
 
 ```
 # Start in the parent folder of all UD repo clones.
-RELDATE=2026/05/15
-RELEASE=2.18
-PREVIOUS=2.17
+RELDATE=2026/11/15
+RELEASE=2.19
+PREVIOUS=2.18
 LICENSE/generate_license_for_lindat.pl --release ${RELEASE} --date ${RELDATE} $(cat released_treebanks.txt)
 cd LICENSE
 git add license-ud-${RELEASE}.html
